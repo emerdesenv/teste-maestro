@@ -2,8 +2,7 @@
 
 * Testes na interface WEB + VS Code e Emulador
 * Teste simples de cliques
-* Teste com Device Farms
-* Maestro Clound
+* Teste com Device Farms + Maestro Clound
 
 ## Testes com Maestro
 
