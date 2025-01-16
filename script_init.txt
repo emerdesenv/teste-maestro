@@ -11,3 +11,8 @@
 
 # NO TERMINAL:
     1 - maestro studio
+
+# OBSERVAÇÕES
+    1 - No Windows Explorer, digite o seguinte comando: \\wsl$
+    2 - A pasta é: Ubuntu/home/USER/projeto
+    3 - Para abri o bash: nano ~/.bashrc
