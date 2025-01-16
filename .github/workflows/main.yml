@@ -1,30 +1,38 @@
-name: Testes Maestro
+name: Run Mobile Tests Locally
 
-# Ao realizar um push ao repositório
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
-    # Maquina que será executado
+  run-tests:
     runs-on: ubuntu-latest
 
-    # Setando a irterface do Cypress e Docker
-    container:
-      image: docker.io/cypress/browsers
-
     steps:
-      # Checkout do Projeto
-      - name: Checkout do Projeto
-        uses: actions/checkout@v4
+      # Verificar o código no repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # Setando o nodeJS
-      - name: Instalar dependências do Projeto
-        uses: actions/setup-node@v4
-        with:
-          node-version: 14
+      # Configurar ambiente de testes
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y adb  # Para conectar dispositivos Android
+          curl -sSL https://robin.cloud/install.sh | bash
+          export PATH="$PATH:/home/runner/.robin"
 
-      # Setando as configurações do Maestro
-      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
-        with:
-          api-key: 49ea9886-f5fe-454b-be34-4853d76e549a
-          app-file: app_qafood.apk
+      # Instalar emulador ou iniciar dispositivo
+      - name: Start Android Emulator
+        run: |
+          sdkmanager "system-images;android-30;google_apis;x86_64"
+          avdmanager create avd -n test_emulator -k "system-images;android-30;google_apis;x86_64"
+          nohup emulator -avd test_emulator -no-window -no-audio &
+
+      # Executar os testes localmente
+      - name: Run tests locally
+        run: |
+          robin test run --config ios-flow.yaml --local --app app_qafood.apk
