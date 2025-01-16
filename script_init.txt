@@ -1,0 +1,13 @@
+### PASSO A PASSO PARA O AMBIENTE WINDOWS ####
+
+# NO TERMINAL DO WINDOWS: 
+    1 - adb -a -P 5037 nodaemon server
+
+# NO TERMINAL DO LINUX:
+    1 - export ADB_SERVER_SOCKET=tcp:IPV4_WINDOWS:5037
+    2 - maestro --host IPV4_WINDOWS studio
+
+### PASSO A PASSO PARA O AMBIENTE LINUX E MAC ####
+
+# NO TERMINAL:
+    1 - maestro studio
