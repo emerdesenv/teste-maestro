@@ -18,3 +18,4 @@
 ## Documentações de Referências
 
 * **Maestro Framework** - https://maestro.mobile.dev/
+* **Maestro Clound** - https://console.mobile.dev/
