@@ -1,6 +1,8 @@
 # teste Maestro
 
 * Testes na interface WEB + VS Code e Emulador
+* Teste simples de cliques
+* Teste com Device Farms + Maestro Clound
 
 ## Testes com Maestro
 
@@ -14,4 +16,5 @@
 
 ## Documentações de Referências
 
-* **Mestro Framework** - https://maestro.mobile.dev/
+* **Maestro Framework** - https://maestro.mobile.dev/
+* **Maestro Clound** - https://console.mobile.dev/
