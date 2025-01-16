@@ -63,7 +63,7 @@ mv cmdline-tools/* tools/
 
 # Configurações das variáveis de ambiente
 
-echo 'export MAESTRO_VERSION=1.37.0' >> ~/.bashrc
+echo 'export MAESTRO_VERSION=1.36.0' >> ~/.bashrc
 echo 'export ANDROID_HOME=$HOME/Android' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools/bin/:$PATH' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/tools/bin/:$PATH' >> ~/.bashrc
@@ -75,7 +75,7 @@ source ~/.bashrc
 
 # Pré configuração do Maestro
 
-curl -Ls "https://get.maestro.mobile.dev" | bash
+curl -Ls "https://get.maestro.mobile.dev" | bash -s -- --version 1.36.0
 
 # Configurações SDK
 
