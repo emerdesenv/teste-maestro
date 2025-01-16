@@ -1,0 +1,30 @@
+name: Testes Maestro
+
+# Ao realizar um push ao repositório
+on: push
+
+jobs:
+  build:
+    # Maquina que será executado
+    runs-on: ubuntu-latest
+
+    # Setando a irterface do Cypress e Docker
+    container:
+      image: docker.io/cypress/browsers
+
+    steps:
+      # Checkout do Projeto
+      - name: Checkout do Projeto
+        uses: actions/checkout@v4
+
+      # Setando o nodeJS
+      - name: Instalar dependências do projeto
+        uses: actions/setup-node@2
+        with:
+          node-version: 14
+
+      # Setando as configurações do Maestro
+      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
+        with:
+          api-key: 49ea9886-f5fe-454b-be34-4853d76e549a
+          api-file: aoo_qafood.apk
