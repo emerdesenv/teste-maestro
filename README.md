@@ -2,7 +2,6 @@
 
 * Testes na interface WEB + VS Code e Emulador
 * Teste simples de cliques
-* Teste com Device Farms + Maestro Clound
 
 ## Testes com Maestro
 
@@ -18,3 +17,7 @@
 
 * **Maestro Framework** - https://maestro.mobile.dev/
 * **Maestro Clound** - https://console.mobile.dev/
+
+## Desafios e Estudos
+
+* * Teste com Device Farms + Maestro Clound
