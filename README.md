@@ -5,13 +5,14 @@
 
 ## Testes com Maestro
 
-* Seguir os documentos **script_init.txt** e **script_config_windows.sh**
+* Seguir os documentos na pasta **totoriais**
 
 ## Comandos básicos
 
 **Observações**: Se estiver rodando no Linux ou MAC não precisa colocar o **IPV4_WINDOWS**
 
-* No terminal do ubuntu, rodar: **maestro --host IPV4_WINDOWS test android-flow.yaml**
+* No terminal, rodar: **maestro test android-flow.yaml** ou **maestro test ios-flow.yaml** - vai rodar o teste do arquivo
+* No terminal, rodar: **maestro studio** - vai abrir a parte web para inspeção e testes
 
 ## Documentações de Referências
 
