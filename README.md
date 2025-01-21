@@ -9,8 +9,6 @@
 
 ## Comandos básicos
 
-**Observações**: Se estiver rodando no Linux ou MAC não precisa colocar o **IPV4_WINDOWS**
-
 * No terminal, rodar: **maestro test android-flow.yaml** ou **maestro test ios-flow.yaml** - vai rodar o teste do arquivo
 * No terminal, rodar: **maestro studio** - vai abrir a parte web para inspeção e testes
 
