@@ -1,28 +1,4 @@
-# Instalação do Java
-# Instalação do Android Studio
-
-# https://github.com/hmsjy2017/get-jdk?tab=readme-ov-file
-
-# Configuração do Android Studio
-
-# (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
-# (Configuração pasta tools) - Conferir as evidências
-
-# Configurações das váriaveis de usuário
-
-# ANDROID_HOME = C:\Users\emers\AppData\Local\Android\Sdk
-# JAVA_HOME = C:\Program Files\Java\jdk1.8.0_231
-
-# Configurações das váriaveis de ambiente: PATH
-
-# C:\Program Files\Java\jdk1.8.0_231\bin
-# C:\Program Files\Java\jre1.8.0_231
-# C:\Users\emers\AppData\Local\Android\Sdk\tools
-# C:\Users\emers\AppData\Local\Android\Sdk\platform-tools
-
-#!/bin/bash
-
-# Configurações no terminal do Ubuntu
+# Configurações Linux
 
 sudo apt update
 sudo apt upgrade
@@ -63,7 +39,6 @@ mv cmdline-tools/* tools/
 
 # Configurações das variáveis de ambiente
 
-echo 'export MAESTRO_VERSION=1.36.0' >> ~/.bashrc
 echo 'export ANDROID_HOME=$HOME/Android' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools/bin/:$PATH' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/tools/bin/:$PATH' >> ~/.bashrc
@@ -75,8 +50,13 @@ source ~/.bashrc
 
 # Pré configuração do Maestro
 
-curl -Ls "https://get.maestro.mobile.dev" | bash -s -- --version 1.36.0
+curl -Ls "https://get.maestro.mobile.dev" | bash
 
 # Configurações SDK
 
 sdkmanager --install "platform-tools"
+
+# Configuração do Android Studio (Final)
+
+# (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
+# (Configuração pasta tools) - Conferir as evidências para configuração
