@@ -14,7 +14,10 @@
 # Configurações das váriaveis de ambiente: PATH
 
 1 - C:\maestro\bin
+2 - C:\Users\emers\AppData\Local\Android\Sdk\tools
+3 - C:\Users\emers\AppData\Local\Android\Sdk\platform-tools
 
 # Configuração do Android Studio (Final)
 
 * (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
+* (Configuração pasta tools) - Conferir as evidências para configuração
