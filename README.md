@@ -17,6 +17,12 @@
 * **Maestro Framework** - https://maestro.mobile.dev/
 * **Maestro Clound** - https://console.mobile.dev/
 
+## Rodando as configurações Maestro Studio
+
+* Abrir o link: **http://localhost:9999/interact** para acessar o inspetor de elementos, abaixo o exemplo:
+
+* ![Json de exemplo](tutoriais/images/exemplo-web.png)
+
 ## Desafios e Estudos
 
 * * Teste com Device Farms + Maestro Clound

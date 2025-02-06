@@ -1,5 +1,4 @@
-appId: com.qazandoqafood
+appId: com.android.chrome
 ---
 - runFlow: subflows/sub.yaml
-- tapOn:
-    id: email
+- assertVisible: Search or type URL

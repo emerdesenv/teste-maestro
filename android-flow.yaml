@@ -1,16 +1,15 @@
-appId: com.qazandoqafood
+appId: com.android.chrome
 ---
 - launchApp
 - tapOn:
-    id: email
-- assertVisible: E-mail
-- inputText: teste@teste.com
+    id: search_box
+- assertVisible: Search or type URL
+- inputText: Maestro Framework
 - tapOn:
-    id: password
-- assertVisible: Senha
-- inputText: 123456
+    id: "com.android.chrome:id/line_1"
+    index: 0
 - tapOn:
-    id: "login-button"
+    point: "50%,44%"
 - scrollUntilVisible:
-    element: "Shushi Home"
+    element: "Maestro"
     direction: DOWN

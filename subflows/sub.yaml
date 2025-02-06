@@ -1,5 +1,5 @@
-appId: com.qazandoqafood
+appId: com.android.chrome
 ---
 - launchApp
 - tapOn:
-    id: password
+    id: search_box
