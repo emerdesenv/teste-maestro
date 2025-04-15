@@ -1,3 +1,15 @@
 appId: com.android.chrome
 ---
 - launchApp
+- tapOn:
+    id: search_box
+- assertVisible: Search or type URL
+- inputText: Maestro Framework
+- tapOn:
+    id: "com.android.chrome:id/line_1"
+    index: 0
+- tapOn:
+    point: "50%,44%"
+- scrollUntilVisible:
+    element: "Maestro"
+    direction: DOWN
